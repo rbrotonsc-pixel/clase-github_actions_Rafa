@@ -6,7 +6,7 @@ env:
   NOMBRE: "mi nombre es Rafa"
 
 
-ob1:
+job1:
   runs-on: ubuntu-latest
   steps:
     - name: mostrar variable en job1
