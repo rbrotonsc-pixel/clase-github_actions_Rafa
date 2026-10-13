@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: simular login
         env:
-         PASSWORD: ${{ secrets.PASSWORD }}
+         PASSWORD: ${{ secrets.contrasena }}
 
         run: |
           echo "Iniciando sesión..."
