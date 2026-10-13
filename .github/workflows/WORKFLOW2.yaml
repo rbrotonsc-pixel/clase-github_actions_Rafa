@@ -2,7 +2,7 @@ name: manejo de secretos
 
 on:
   push:
-  workflow_disptch:
+  workflow_dispatch:
 
 jobs:
   login:
