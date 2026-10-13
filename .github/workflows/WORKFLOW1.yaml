@@ -5,18 +5,16 @@ on:
 env:
   NOMBRE: "mi nombre es Rafa"
 
-Jobs:
 
-  job1:
-    runs-on: ubuntu-latest
-    steps:
-      - name: mostrar variable en job1
-        run: echo "$NOMBRE"
-
-  Job2:
-    runs-on: ubuntu-latest
-    steps:
-      - name: enseñar el mensaje en mayusculas
-        run: echo "${MENSAJE^^}"
+ob1:
+  runs-on: ubuntu-latest
+  steps:
+    - name: mostrar variable en job1
+      run: echo "$NOMBRE"
+job2:
+  runs-on: ubuntu-latest
+  steps:
+    - name: enseñar el mensaje en mayusculas
+      run: echo "${MENSAJE^^}"
 
 
