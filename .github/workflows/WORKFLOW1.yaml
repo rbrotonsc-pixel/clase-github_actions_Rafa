@@ -1,6 +1,6 @@
 name: Variable de entorno globales
 on:
-  workflow_dispatch
+  workflow_dispatch:
 
 env:
   NOMBRE: "mi nombre es Rafa"
