@@ -1,20 +1,25 @@
-name: Variable de entorno globales
+
+name: Variables de Entorno Globales
+
 on:
+  push:
   workflow_dispatch:
 
 env:
-  NOMBRE: "mi nombre es Rafa"
+  MENSAJE: "Hola desde GitHub Actions"
 
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mostrar mensaje original
+        run: echo "$MENSAJE"
 
-job1:
-  runs-on: ubuntu-latest
-  steps:
-    - name: mostrar variable en job1
-      run: echo "$NOMBRE"
-job2:
-  runs-on: ubuntu-latest
-  steps:
-    - name: enseñar el mensaje en mayusculas
-      run: echo "${MENSAJE^^}"
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mostrar mensaje en mayúsculas
+        run: echo "${MENSAJE^^}"
+
 
 
