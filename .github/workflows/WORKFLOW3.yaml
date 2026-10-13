@@ -1,0 +1,16 @@
+name: Matriz de estrategia
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: ["3.10","3.11","3.12"]
+        
+
+
